@@ -31,6 +31,7 @@ struct SignInView: View {
           viewModel: buttonViewModel,
           action: authViewModel.signIn
         )
+          .accessibilityIdentifier("GoogleSignInButton")
           .accessibility(hint: Text("Sign in with Google button."))
           .padding()
       }
